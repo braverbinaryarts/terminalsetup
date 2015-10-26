@@ -14,10 +14,11 @@ brew install ruby
 brew install zsh
 brew install git
 brew install tmux
+brew install gpg
 
 git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 cp ~/.zshrc ~/.zshrc.orig
-cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+cp zshrc ~/.zshrc
 chsh -s /bin/zsh
 
 sudo easy_install pip
@@ -35,4 +36,3 @@ cp vimrc ~/.vimrc
 vim +PluginInstall +qall
 
 cp tmux.conf ~/.tmux.conf
-
